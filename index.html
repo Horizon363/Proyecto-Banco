@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liberty</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <a href="home.html"><img src="bank.png" alt="Logo del banco" class="logo"></a>
+    <div id="loginContainer">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm" onsubmit="validateLoginForm(event)">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" required><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required><br><br>
+            <input type="submit" value="Iniciar sesión">
+        </form>
+        <p id="registerLink" onclick="toggleRegisterForm()">¿No tienes una cuenta? Regístrate aquí</p>
+    </div>
+    <div id="registerContainer">
+        <h2>Crear cuenta</h2>
+        <form id="registerForm" onsubmit="validateRegisterForm(event)">
+            <label for="newUsername">Nombre de usuario:</label>
+            <input type="text" id="newUsername" required><br><br>
+            <label for="newPassword">Contraseña:</label>
+            <input type="password" id="newPassword" required><br><br>
+            <label for="confirmPassword">Confirmar contraseña:</label>
+            <input type="password" id="confirmPassword" required><br><br>
+            <input type="submit" value="Crear cuenta">
+        </form>
+        <p id="registerLink" onclick="window.location.href='index.html'">¿Ya tienes una cuenta? Inicia sesión aquí</button>
+    </div>
+    
+    
+    <script>
+        function toggleRegisterForm() {
+            var loginContainer = document.getElementById("loginContainer");
+            var registerContainer = document.getElementById("registerContainer");
+
+            loginContainer.style.display = "none";
+            registerContainer.style.display = "block";
+        }
+    </script>
+    <footer>
+        <p>Derechos de autor © 2023 Bank of Liberty. Todos los derechos reservados.</p>
+      </footer>
+      
+</body>
+</html>

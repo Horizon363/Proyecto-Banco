@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-item">
+      <span>Menú</span>
+      <div class="menu-dropdown">
+        <div class="menu-dropdown-item" onclick="solicitarTarjetas()">Solicitar Tarjetas</div>
+        <div class="menu-dropdown-item" onclick="administrarTarjetas()">Administrar Tarjetas</div>
+        <div class="menu-dropdown-item" onclick="realizarTransferencia()">Realizar Transferencia</div>
+        <div class="menu-dropdown-item" onclick="cerrarSesion()">Cerrar Sesión</div>
+      </div>
+    </div>
+  </div>
+  
+  <a href="home.html"><img src="bank.png" alt="Logo del banco" class="logo"></a>
+  <h1>Banca Electrónica</h1>
+
+  <div class="card">
+    <img src="platinum1.jpg" alt="Tarjeta Debit Platinum">
+    <h2>Debit Platinum</h2>
+    <p>Número de tarjeta: **** **** **** 3456</p>
+    <p id="saldo-debito">Saldo: $5000</p>
+    <button class="button" onclick="depositarATarjetaDeDebito()">Depositar</button>
+  </div>
+
+  <div class="card">
+    <img src="world.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Credit World Elite</h2>
+    <p>Número de tarjeta: **** **** **** 3456</p>
+    <p id="saldo-credito">Saldo: $-12000</p>
+    <p id="limite-credito">Límite de Crédito: $60000</p>
+    <button class="button" onclick="pagarTarjetaDeCredito()">Pagar</button>
+  </div>
+
+  <footer>
+    <p>Derechos de autor © 2023 Bank of Liberty. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+  <script>
+    function solicitarTarjetas() {
+      window.location.href = "cards.html";
+    }
+
+    function administrarTarjetas() {
+        alert("Under construction.");
+    }
+
+    function realizarTransferencia() {
+        alert("Under construction.");
+    }
+
+    function cerrarSesion() {
+        window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>

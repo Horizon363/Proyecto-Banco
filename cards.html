@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty</title>
+  <link rel="stylesheet" href="stylecard.css">
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-item">
+      <span>Menú</span>
+      <div class="menu-dropdown">
+        <div class="menu-dropdown-item" onclick="bancaelctronica()">Banca Electrónica</div>
+        <div class="menu-dropdown-item" onclick="administrarTarjetas()">Administrar Tarjetas</div>
+        <div class="menu-dropdown-item" onclick="realizarTransferencia()">Realizar Transferencia</div>
+        <div class="menu-dropdown-item" onclick="cerrarSesion()">Cerrar Sesión</div>
+      </div>
+    </div>
+  </div>
+  
+  <img src="bank.png" alt="Logo del banco" class="logo">
+  <h1>Tarjetas Disponibles</h1>
+
+  <div class="card">
+    <img src="standard.jpg" alt="Tarjeta Debit Platinum">
+    <h2>Debit Classic</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="gold.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Debit Gold</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="platinum.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Debit Platinum</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="elite.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Debit World Elite</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="standard.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Credit Classic</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="gold.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Credit Gold</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="platinum.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Debit Platinum</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <div class="card">
+    <img src="elite.jpg" alt="Tarjeta Credit World Elite">
+    <h2>Debit World Elite</h2>
+    <button class="button" onclick="solicitar()">Solicitar Informacion</button>
+  </div>
+
+  <footer>
+    <p>Derechos de autor © 2023 Bank of Liberty. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="cards.js"></script>
+  <script>
+    function bancaelctronica() {
+        window.location.href = "dashboard.html";
+    }
+
+    function administrarTarjetas() {
+        alert("Under construction.");
+    }
+
+    function realizarTransferencia() {
+        alert("Under construction.");
+    }
+
+    function cerrarSesion() {
+        window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>
